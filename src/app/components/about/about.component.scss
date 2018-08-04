@@ -1,0 +1,15 @@
+.btn {
+  background-color: #5c040f;
+  border: none;
+  margin-top: 20px;
+}
+.container {
+  width: 50%;
+  margin: 20px auto;
+}
+.link {
+  color: #343a40;
+  &:hover {
+    color: #5c040f;
+  }
+}

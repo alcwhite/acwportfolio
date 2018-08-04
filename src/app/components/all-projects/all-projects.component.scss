@@ -1,0 +1,36 @@
+.container {
+  .row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+      img {
+        object-fit: cover;
+        max-height: 200px;
+      }
+      .card-body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        .badges {
+          margin: 10px auto;
+          width: 50%;
+          span {
+            width: 100%;
+          }
+        }
+        .btn {
+          display: block;
+          margin: auto;
+          width: 100px;
+          background-color: #5c040f;
+          outline: none;
+          border: none;
+        }
+      }
+    }
+  }
+h2 {
+  margin-top: 20px;
+  text-align: center;
+}

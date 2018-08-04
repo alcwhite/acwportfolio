@@ -1,0 +1,15 @@
+<h2>Graphic Design</h2>
+<div class="container">
+  <div class="row">
+    <div *ngFor="let design of designs" class="card col-md-6">
+      <img class="card-img-top" src="{{ design.img }}" alt="design image">
+      <div class="card-body">
+        <h3 class="card-title">{{ design.title }}</h3>
+        <p>{{ design.description }}</p>
+        <div class="badges">
+          <span *ngFor="let tech of design.tech" class="badge badge-pill badge-dark">{{ tech }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

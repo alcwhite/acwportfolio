@@ -1,0 +1,16 @@
+<h2>Front-End Development Projects</h2>
+<div class="container">
+  <div class="row">
+    <div class="card col-md-4 col-sm-6" *ngFor="let post of posts">
+      <img class="card-img-top" src="{{ post.img }}" alt="Project thumbnail">
+      <div class="card-body">
+        <h2 class="card-title">{{ post.title }}</h2>
+        <p>{{ post.description }}</p>
+        <div class="badges">
+          <span *ngFor="let tech of post.tech" class="badge badge-pill badge-dark">{{ tech }}</span>
+        </div>
+        <a href="{{ post.link }}" class="btn btn-primary" target="_blank">See it</a>
+      </div>
+    </div>
+  </div>
+</div>
